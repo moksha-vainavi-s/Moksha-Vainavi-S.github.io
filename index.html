@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOKSHA VAINAVI S - Data Analyst Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #FFFFFF;
+      color: #374151; /* Gray text */
+      display: flex;
+    }
+
+    /* ✅ Sidebar Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 100%;
+      background: #1E293B; 
+      padding-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin: 12px 0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s, background 0.3s;
+      padding: 10px 15px;
+      border-radius: 6px;
+      width: 80%;
+      text-align: center;
+    }
+    nav a:hover {
+      background: #374151;
+      color: #2563EB; 
+    }
+
+    /* ✅ Main Content */
+    .main-content {
+      margin-left: 220px; /* offset for sidebar */
+      flex: 1;
+    }
+
+    /* ✅ Top Banner */
+    header {
+      background: #e6f2ff; /* Soft pastel blue background */
+      color: #000000; /* Black text looks neat on pastel */
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+   header h1 {
+    font-size: 42px;
+    margin: 0;
+    color: #000000; /* Black for clarity */
+   }
+
+   header h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 10px 0;
+    color: #374151; /* Neutral gray */
+   }
+ 
+  header p a {
+    color: #007bff; /* Keep email link in blue */
+    text-decoration: none;
+   }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+   h2 {
+     color: #2563EB; /* Royal Blue for section headings */
+     margin-bottom: 15px;
+   }
+
+    .item {
+      background: #fff;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+    }
+
+    footer {
+      background: #FFFFFF;
+      color: #374151;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    /* ✅ Resume Button */
+    .resume-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .resume-btn:hover {
+      background: #0056b3;
+    }
+
+    /* ✅ Project Section */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      border: 1px solid #e5e7eb;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    }
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      height: 150px;
+      object-fit: cover;
+    }
+   .project-card h3 {
+     color: #000000; /* Changed from blue to black */
+     margin: 10px 0 5px;
+    }
+
+    /* ✅ Education Card */
+    .edu-card {
+      width: 250px;
+      margin: 20px 0;
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #e5e7eb;
+    }
+    .edu-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- ✅ Sidebar Navigation -->
+  <nav>
+    <a href="#ABOUT">ABOUT ME</a>
+    <a href="#SKILLS">SKILLS</a>
+    <a href="#PROJECTS">PROJECTS</a>
+    <a href="#CERTIFICATES">CERTIFICATES</a>
+    <a href="#EXPERIENCE">EXPERIENCE</a>
+    <a href="#LANGUAGE">LANGUAGE</a>
+    <a href="#EDUCATION">EDUCATION</a>
+    <a href="#CONTACT">CONTACT ME</a>
+  </nav>
+
+  <!-- ✅ Main Content -->
+  <div class="main-content">
+
+    <!-- ✅ Banner -->
+    <header>
+      <h1>MOKSHA VAINAVI S</h1>
+      <h2>Data Analyst | Data Science </h2>
+      <p>Email: <a href="mailto:smokshavainavi@gmail.com">smokshavainavi@gmail.com</a></p>
+    </header>
+
+    <!-- ✅ About -->
+    <section id="ABOUT">
+      <h2>ABOUT ME</h2>
+      <p>I’m Moksha Vainavi, a motivated and detail-driven BCA student at Saveetha University (Class of 2026), with a keen interest in data analytics. I enjoy exploring data, creating clear visualizations, and applying machine learning techniques to solve problems. My goal is to grow as a Data Analyst and help turn complex data into valuable insights..</p>
+    </section>
+
+    <!-- ✅ SKILLS -->
+    <section id="SKILLS">
+      <h2>SKILLS</h2>
+      <div class="skills">
+        <ul>
+          <li><strong>Programming:</strong> Python, SQL</li>
+          <li><strong>Machine Learning:</strong> Linear Regression, Logistic Regression, KNN, SVM, LSTM, CNN, Naive Bayes</li>
+          <li><strong>Data Visualization:</strong> Power BI, Tableau</li>
+          <li><strong>Data Handling:</strong> Pandas, NumPy, Excel</li>
+          <li><strong>Deployment Tools:</strong> Flask, Streamlit</li>
+          <li><strong>Other Tools:</strong> GitHub</li>
+        </ul>
+      </div>
+    </section>
+<!-- ✅ Projects -->
+ <section id="PROJECTS">
+    <h2>PROJECTS</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+        <img src="https://cdn.prod.website-files.com/5c6283f39ea6205dee7cf941/5e77612699e08415b62b9868_online_payment_fraud.jpg" alt="Anomaly Detection">
+        <h3>Detect Anomalies in Online Payments</h3>
+        <p>Researched ML model for anomaly detection in online payment transactions.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://miro.medium.com/v2/resize:fit:875/1*er3r9lUQFEz-nChGNEFrOg.jpeg" alt="House Price Prediction">
+        <h3>House Price Prediction</h3>
+        <p>Regression models to forecast house prices accurately.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpJdK6EfDl_NymHMZS2E_uCAYmlayC7mSS6g&s" alt="Loan Approval">
+        <h3>Loan Approval Prediction Analysis</h3>
+        <p>Analyzed applicants data with ML algorithms to predict approvals.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://img.freepik.com/premium-photo/fresh-produce-groceries-sale-supermarket-aisle-golden-hour_1225720-18603.jpg?semt=ais_incoming&w=740&q=80" alt="Supermarket Sales">
+        <h3>SuperMarket Sales Excel</h3>
+        <p>Built dashboards to track and analyze supermarket sales.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://www.pattersonconsultingtn.com/blog/images/meta_og_images/pct_ccfd_p5_og_card.png" alt="Fraud Detection">
+        <h3>Interactive Credit Card Fraud Detection</h3>
+        <p>Built a Streamlit app using Logistic Regression for fraud detection.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Certificates -->
+  <section id="CERTIFICATES">
+    <h2>CERTIFICATES</h2>
+    <ul>
+      <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_5qaYiGknb7bKfZW44_1751643392702
+_completion_certificate.pdf">Deloitte | Data Analytics Job Simulation</a></li>
+      <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/32A6DqtsbF7LbKdcq/NkaC7knWtjSbi6aYv_32A6DqtsbF7LbKdcq_5qaYiGknb7bKfZW44_1756656162823_completion_certificate.pdf">Quantium | Data Analytics Job Simulation</a></li>
+      <li><a href="https://www.cloudskillsboost.google/course_templates/927/badge">Google Cloud Badge | Machine Learning Operations (MLOps) for Generative AII</a></li>
+      <li><a href="https://www.cloudskillsboost.google/course_templates/578/badge" target="_blank">Google Cloud Badge |Introduction to Data Analytics on Google Cloud</a></li>
+      <li><a href="https://www.life-global.org/certificate/2c9c4878-ce31-4b9a-8ead-b547bbe41629">HP Life | AI for Beginners </a></li>
+      <li><a href="https://verify.techtip24.com/profile?credId=68b42cb8398233ead084daa2">TechTip24 | Data Analytics Using Power BI Workshop </a></li>
+      <li><a href="https://certx.in/certificate/a3ae0c0d-1f62-4e3f-bede-17ff37c364a7681706">AI For Techies| SQL Using AI Workshop </a></li>    
+    </ul>
+  </section>
+
+  <!-- ✅ Experience -->
+    <section id="EXPERIENCE">
+    <h2>EXPERIENCE</h2>
+
+  <div class="item">
+    <p><strong>Data Science Intern</strong> - Gradtwin (3 Months)</p>
+    <p>Skills: Python, Machine Learning, Microsoft Power BI, etc.</p>
+
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/company/gradtwin" target="_blank" style="color:#3B82F6;">
+        linkedin.com/company/gradtwin
+      </a>
+    </p>
+  </div>
+
+  <div class="item">
+    <p><strong>Data Analytics Intern</strong> - Approtech&D Solutions Pvt. Ltd (May 2025 – Jun 2025, On-site)</p>
+    <p>Skills: SQL, Microsoft Excel, Python, Power BI, etc.</p>
+
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/company/approtechr-dsolutionspvtltd" target="_blank" style="color:#3B82F6;">
+        linkedin.com/company/approtechr-dsolutionspvtltd
+      </a>
+    </p>
+  </div>
+</section>
+
+
+   <!--✅ Language Section -->
+<section id="LANGUAGE">
+  <h2>LANGUAGE</h2>
+  <ul class="language-list">
+    <li>
+      <strong>English</strong> 
+      <span class="dots">
+        ● ● ● ● ○
+      </span>
+    </li>
+    <li>
+      <strong>Telugu</strong> 
+      <span class="dots">
+        ● ● ● ● ●
+      </span>
+    </li>
+    <li>
+      <strong>Tamil</strong> 
+      <span class="dots">
+        ● ● ● ● ○
+      </span>
+    </li>
+  </ul>
+</section>
+
+<style>
+  #LANGUAGE {
+    font-family: Arial, sans-serif;
+  }
+
+  .language-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .language-list li {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .dots {
+    margin-left: 10px;
+    color: #000000; /* Black dots */
+    letter-spacing: 3px;
+    font-size: 14px;
+  }
+</style>
+
+
+
+  <!-- ✅ Education -->
+  <section id="EDUCATION">
+    <h2>EDUCATION</h2>
+    <div class="edu-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Saveetha_Institute_of_Medical_And_Technical_Sciences_Logo.png" alt="Saveetha University">
+      <p><strong>Saveetha University – BCA</strong></p>
+      <p>Computer Applications (Jul 2023 – Mar 2026)</p>
+      <p>CGPA: 8.39</p>
+    </div>
+  </section>
+
+  <!-- ✅ Contact -->
+  <section id="CONTACT ME">
+    <h2>CONTACT ME</h2>
+    <p>Email: <a href="mailto:smokshavainavi@gmail.com" style="color:#3B82F6;">smokshavainavi@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/moksha-vainavi-s-b311512a5" target="_blank" style="color:#3B82F6;">linkedin.com/in/moksha-vainavi-s-b311512a5</a></p>
+    <p>GitHub: <a href="https://github.com/moksha-vainavi-s" target="_blank" style="color:#3B82F6;">github.com/moksha-vainavi-s</a></p>
+    <p>Location: Chennai, India</p>
+    <a href="Moksha_Vainavi_S__Resume.pdf" download>Download Resume</a>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>&copy; 2025 Moksha Vainavi S. All Rights Reserved.</p>
+  </footer>
+
+ </div>
+</body>
+</html>
+
